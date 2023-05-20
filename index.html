@@ -10,25 +10,33 @@
     <title>Mi Portfolio</title>
     <!-- Color could be used #22857b #7bfac3 -->
     <style>
-        .container-sm {
+        #titulo{
+            color: #2b3035;
+        }
+
+        #profile-image {
+            margin-top: 20px;
+        }
+
+        .container-md {
             max-width: 1000px;
         }
 
-        .container-sm > .card {
-            background-color: #3faa85;
+        .container-md > .card {
+            background-color: #a67d54;
             border-color: #212529;
             margin: 15px 0px 15px 0px;
         }
 
-        .container-sm > .card > .card-body > .card{
-            background-color: #92d57c;
+        .container-md > .card > .card-body > .card{
+            background-color: #c4a482;
             border-color: #212529;
             margin: 10px 0px 10px 0px;
         }
 
         .list-group-item {
-            background-color: #92d57c;
-            border-color: #92d57c;
+            background-color: #c4a482;
+            border-color: #c4a482;
             border-width: 1px;
             color: #1b1f22;
             font-size: 1.2rem;
@@ -44,15 +52,20 @@
         }
 
         .btn-primary {
-            background-color: #3faa85;
-            border-color: #3faa85;
+            background-color: #9c6644;
+            border-color: #9c6644;
             font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #b68f58;
+            border-color: #b68f58;
         }
     </style>
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar sticky-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Lucas's Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -78,9 +91,11 @@
         </div>
     </nav>
 
-    <div class="container-sm">
-
-        <h1 class="text-white-50 text-center display-1 my-5">Lucas Gruden</h1>
+    <div class="container-md">
+        <div class="card rounded-4 align-items-center">
+            <img src="./imgs/profile-image.jpg" class="img-fluid rounded-3" id="profile-image" alt="profile image" width="150">
+            <h1 class="text-center display-1 my-3" id="titulo">Lucas Gruden</h1>
+        </div>
 
         <div class="card rounded-4">
             <h5 class="card-header text-capitalize">Descripcion</h5>
